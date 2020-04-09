@@ -1,9 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SomeCss</title>
+        <link rel="tagstyle" href="tagstyle.css">
     </head>
     <body>
+        <h1>Novice</h1>
+        <h2>Fonts</h2>
+        <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">This is font 1.</p>
+        <p style="font-family: monospace;">This is font 2.</p>
         
+        <h2>Images</h2>
+        <a target= "blank" href="https://pbs.twimg.com/profile_images/971359833826918400/G1aAQGO-_400x400.jpg">
+            <img 
+                src="https://pbs.twimg.com/profile_images/971359833826918400/G1aAQGO-_400x400.jpg"
+                title="number one"
+                style="width: 50px; height: 50px; margin: 5px"
+            />
+        </a>
+        <a target="blank" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/NYCS-bull-trans-2.svg/1024px-NYCS-bull-trans-2.svg.png">
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/NYCS-bull-trans-2.svg/1024px-NYCS-bull-trans-2.svg.png"
+                title="number two"
+                style="width: 50px; height: 50px; margin: 5px;"
+            />
+        </a>
+
+        <h2>One more unique command (filter)</h2>    
+        <a target="blank" href="https://www.revereauctions.com/wp-content/uploads/2019/03/andy_warhol_marilyn_01.png">
+            <img 
+                src="https://www.revereauctions.com/wp-content/uploads/2019/03/andy_warhol_marilyn_01.png"
+                title="andy warhol painting"
+                style="width: 100px;"
+            />
+        </a>
+        <a target="blank" href="https://www.revereauctions.com/wp-content/uploads/2019/03/andy_warhol_marilyn_01.png">
+            <img 
+                src="https://www.revereauctions.com/wp-content/uploads/2019/03/andy_warhol_marilyn_01.png"
+                title="andy warhol painting"
+                style="width: 100px;
+                filter: grayscale();"
+            />
+        </a>
+
+        <h1>Apprentice</h1>
+        <h2>Text centered on a photo</h2>
+        <div class= "container"  style= "position:relative; text-align:center; color:black">
+            <img 
+                src="https://i.pinimg.com/originals/0b/ac/47/0bac4734cc1c2fa4f98b4d2277130bd1.jpg"
+                alt="gradient"
+                style="width: 100px; margin: 5px;"
+            />
+            <div 
+                class= "centered" 
+                style="
+                    color: black; 
+                    position: absolute; 
+                    top: 50%; left: 50%; 
+                    transform: translate(-50%, -50%);">Centered Text</div>
+        </div>
+        
+        <h2>Photo with 20px margins</h2>
+        <a target= "blank" href="https://i.pinimg.com/originals/67/38/84/6738847d23e69690940107bb99c33dc4.jpg">
+            <img 
+                src="https://i.pinimg.com/originals/67/38/84/6738847d23e69690940107bb99c33dc4.jpg"
+                title="forever 21 logo"
+                style="width: 50px; height: 50px; margin: 20px;"
+            />
+        </a>
+
+        <h2>Text with dotted border</h2>
+        <p style="border: 4px blue dotted;">I am just a dot, doo da doo da doo</p>
     </body>
 </html>
