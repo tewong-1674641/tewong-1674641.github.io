@@ -1,44 +1,53 @@
+h3{
+    color: #FFBC00;
+    font-family: "Passion One", cursive;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
 body{
-    background-image: url('dark_wood.png');
+    text-align: center;
+    background-image: url("dark_wood.png");
 }
 
 p{
-    color: white;
     font-family: "Arial";
-    background-color: #8E41D5;
     font-weight: bold;
 }
 
-h3{
-    color: #FFBC00;
-    font-size: 40px;
-    font-family: "Passion One";
-    margin-bottom: 0px;
-    background-color: #8E41D5;
+a{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 ul{
-    background-color: #8E41D5;
+    list-style-type: none;
+    padding-left: 0px;
 }
 
-#Header{
+div {
+    background-color: #8E41D5;
+    color: white;
+}
+
+#Header {
     width: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
     border: solid 8px black;
-    text-align: center;
-    background-color: #8E41D5;
 }
 
 #Header h1{
-    font-size: 60px; 
-    font-family: "Passion One"; 
-    color: #FFBC00; 
+    font-size: 60px;
+    font-family: "Passion One", cursive;
+    color: #FFBC00;
     font-weight: bold;
-
 }
 
+/*will overlap due to computer size*/
 #LeftNav{
     width: 400px;
     margin-left: auto;
@@ -46,26 +55,7 @@ ul{
     margin-bottom: 10px;
     border: solid 8px black;
     float: left;
-    text-align: center;
-    padding-bottom: 8px;
-    background-color: #8E41D5;
-    
-}
-
-#LeftNav img{
-    background-color: #8E41D5;
-
-}
-
-#LeftNacv ul{
-    list-style-type: none;
-    padding-left: 0px;
-    background-color: #8E41D5;
-}
-
-#LeftNav h3{
-    background-color: #8E41D5;
-
+    padding-bottom: 8x;
 }
 
 #Content{
@@ -74,17 +64,16 @@ ul{
     margin-right: auto;
     margin-bottom: 10px;
     border: solid 8px black;
-    text-align: center;
     padding: 15px;
-    background-color: #8E41D5;
 }
 
 #Footer{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
     border: solid 8px black;
-    text-align: center;
-    background-color: #8E41D5;
 }
 
-a{
-    color: white; font-weight: bold; font-size: 24px;
+#bow{
+    color: #FFBC00;
 }
