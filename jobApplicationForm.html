@@ -11,7 +11,7 @@
             <!Account information - email and password!>
             <fieldset>
                 <legend>Account</legend>
-                                <div>
+                <div>
                     <label for="email">Email: </label>
                     <input type="text" name="email">
                 </div>
@@ -60,7 +60,7 @@
                 <div>
                     <label for="state">State: </label>
                     <!5. drop down list!>
-                    <select name="state">
+                    <select name="state" size="5" multiple>
                         <option value="" selected>Choose a State</option>
                         <option value="">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -118,9 +118,18 @@
                     <label for="zip">ZIP: </label>
                     <input type="text" name="zip">
                 </div>
+                <div>
+                    <label for="education">Education Status: </label>
+                    <ul>
+                        <li><input type="radio" name="education" value="ged">High School/GED</li>
+                        <li><input type="radio" name="education" value="bachelors">Bachelor Degree</li>
+                        <li><input type="radio" name="education" value="masters">Masters Degree</li>
+                    </ul>
+                </div>
+
             </fieldset>
             
-            <!Availability - !>
+            <!Availability - legal, drug test, position, hours amount & type!>
             <fieldset>
                 <legend>Availability</legend>
                 <div>
@@ -131,24 +140,24 @@
                         <input type="radio" name="legal" value="no">No
                 </div>
                 <div>
-                    <label for="drug"></label>
+                    <label for="drug_test"></label>
                     Are you wiling to take a drug test?
-                        <input type="radio" name="drug" value="yes">Yes
-                        <input type="radio" name="drug" value="no">No
+                        <input type="radio" name="drug_test" value="yes">Yes
+                        <input type="radio" name="drug_test" value="no">No
                 </div>
                 <div>
                     What type of position are you seeking? (check all that apply)
                         <ul>
                             <!4. checkboxes!>
-                            <li><input type="checkbox" name="position" value="part_time">Part time</li>
-                            <li><input type="checkbox" name="position" value="full_time">Full time</li>
-                            <li><input type="checkbox" name="position" value="seasonal">Seasonal</li>
-                            <li><input type="checkbox" name="position" value="temporary">Temporary</li>
+                            <li><input type="checkbox" name="job_position" value="part_time">Part time</li>
+                            <li><input type="checkbox" name="job_position" value="full_time">Full time</li>
+                            <li><input type="checkbox" name="job_position" value="seasonal">Seasonal</li>
+                            <li><input type="checkbox" name="job_position" value="temporary">Temporary</li>
                         </ul>
                 </div>
                 <div>
                     <label for="hours_amount"></label>
-                    How many hours can work per week?
+                    How many hours can you work per week?
                         <input type="radio" name="hours_amount" value="10-20">10-20
                         <input type="radio" name="hours_amount" value="20-30">20-30
                         <input type="radio" name="hours_amount" value="30-40">30-40
@@ -207,15 +216,23 @@
                         <li>Why are you right for this job?</li>
                         <li>What kind of leadership experience do you have, and how does this impact you?</li>
                     </ol>
-                    <textarea name="essay" rows="6" cols="50"></textarea>
+                    <textarea name="personal_statement" rows="6" cols="50"></textarea>
                 </div>
                 <div>
                     Is there anything else we should know about you?<br>
                     <textarea name="additional_info" rows="6" cols="50"></textarea>
                 </div>
             </fieldset>
+
+            <!Submit - submit button, today_date!>
+            <fieldset>
+                <legend>Submit</legend>
+                <label for="date">Today's Date: </label>
+            <input type="date" value="today_date"><br>
+            <button type="button" onclick="alert('Saved!')">save</button>
             <!submit button!>
             <input type="submit" value="submit form">
+            </fieldset>
         </form>      
     </body>
 </html>
