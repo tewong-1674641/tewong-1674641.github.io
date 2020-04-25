@@ -400,6 +400,7 @@
 		background-color: #fff;
 		margin-bottom: 2em;
 		padding: 3em 2em;
+		opacity: 0.75;
 	}
 
 		.box > :last-child,
@@ -461,6 +462,7 @@
 		.image img {
 			border-radius: 100px;
 			display: block;
+			opacity: 0.75;
 		}
 
 		.image.left {
@@ -848,7 +850,7 @@
 		}
 
 		.wrapper.style2 {
-			background: #192024;
+			background: #000;
 			color: #c5c7c8;
 		}
 
